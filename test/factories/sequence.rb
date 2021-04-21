@@ -1,5 +1,5 @@
 FactoryBot.define do
-  sequence :string, aliases: [:first_name, :last_name, :password] do |n|
+  sequence :string, aliases: [:first_name, :last_name, :password, :name, :description] do |n|
     "string#{n}"
   end
 
@@ -9,5 +9,13 @@ FactoryBot.define do
 
   sequence :avatar do |n|
     "url://avatar-#{n}.png"
+  end
+
+  sequence :state do |n|
+    "draft"
+  end
+
+  sequence :expired_at do |n|
+    1.day.since
   end
 end
