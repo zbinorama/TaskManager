@@ -12,7 +12,7 @@ FactoryBot.define do
   end
 
   sequence :state do |n|
-    "draft"
+    "new_task"
   end
 
   sequence :expired_at do |n|
