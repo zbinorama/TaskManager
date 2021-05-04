@@ -11,11 +11,11 @@ FactoryBot.define do
     "url://avatar-#{n}.png"
   end
 
-  sequence :state do |n|
-    "new_task"
+  sequence :state do
+    'new_task'
   end
 
-  sequence :expired_at do |n|
+  sequence :expired_at do
     1.day.since
   end
 end
