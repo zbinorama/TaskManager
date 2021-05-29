@@ -7,7 +7,7 @@ class TaskSerializer < ApplicationSerializer
     object.state_transitions.map do |transition|
       {
         event: transition.event,
-        from: tranistion.form,
+        from: transition.from,
         to: transition.to,
       }
     end
