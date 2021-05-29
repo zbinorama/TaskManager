@@ -46,7 +46,8 @@ class Api::V1::TasksControllerTest < ActionController::TestCase
   end
 
   test 'should delete destroy' do
-    author = create(:user)
+    author = create(:manager)
+    sign_in(author)
     task = create(:task, author: author)
     delete :destroy, params: { id: task.id, format: :json }
     assert_response :success
