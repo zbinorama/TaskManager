@@ -2,7 +2,8 @@
   "name": "task-manager",
   "private": true,
   "scripts": {
-    "lint": "./node_modules/.bin/eslint app/javascript"
+    "lint": "./node_modules/.bin/eslint app/javascript",
+    "lint-auto-fix": "./node_modules/.bin/eslint --fix"
   },
   "dependencies": {
     "@babel/preset-react": "^7.13.13",
